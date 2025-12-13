@@ -1,4 +1,5 @@
 from GuessingGame import play as guess_game
+from TicTacToe import play as ttt_game
 
 def playagain(game):
     while True:
@@ -21,16 +22,19 @@ while playing:
 
     print("Choose a Game You Want To Play\n")
     print("1. Guess Numbers")
-    print("2. Quit")
+    print("2. Tic Tac Toe")
+    print("3. Exit")
     print()
     choice=int(input("Enter your choice: "))
     print("\n")
     playing=True
 
-    if choice==2:
+    if choice==3:
         playing=False
     elif choice==1:
         guess_game()
         playagain(guess_game)
+    elif choice==2:
+        ttt_game()
     else:
         print("Invalid Choice, Try Again\n")
