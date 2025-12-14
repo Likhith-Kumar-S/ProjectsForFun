@@ -10,12 +10,12 @@ def play():
             print("Where do you want to place? ")
             row=int(input("Enter the row number: "))
             col=int(input("Enter the column number: "))
-            if matrix[row-1][col-1] == '-':
-                matrix[row-1][col-1] = symbol
-                break
-            elif(row<1 or row>3 or col<1 or col>3):
+            if (row<1 or row>3 or col<1 or col>3):
                 print("Invalid Position! Exiting the Game.")
                 exit()
+            elif matrix[row-1][col-1] == '-':
+                matrix[row-1][col-1] = symbol
+                break
             else:
                 print("You can't place there. Try again.")
 
@@ -55,11 +55,18 @@ def play():
     while True and exit()==True:
         place("Player 1", matrix, 'X')
         printmatrix(matrix)
+        print()
         if win(matrix):
             print("Player 1 Wins!")
             break
+
+        if tie(matrix):
+            print("It's a Tie!")
+            break
+        
         place("Player 2", matrix, 'O')
         printmatrix(matrix)
+        print()
         if win(matrix):
             print("Player 2 Wins!")
             break
