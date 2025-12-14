@@ -23,7 +23,7 @@ while playing:
 
     print("Choose a Game You Want To Play\n")
     print("1. Guess Numbers")
-    print("2. Tic Tac Toe")
+    print("2. Tic Tac Toe (2 Players)")
     print("3. Rock Paper Scissors")
     print("4. Quit")
     print()
