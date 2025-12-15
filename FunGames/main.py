@@ -1,6 +1,7 @@
 from GuessingGame import play as guess_game
 from TicTacToe import play as tictactoe_game
 from RockPaperScissor import play as RPS_game
+from RollTheDice import play as RTD_game
 
 def playagain(game):
     while True:
@@ -25,13 +26,14 @@ while playing:
     print("1. Guess Numbers")
     print("2. Tic Tac Toe (2 Players)")
     print("3. Rock Paper Scissors")
-    print("4. Quit")
+    print("4. Roll The Dice")
+    print("5. Quit")
     print()
     choice=int(input("Enter your choice: "))
     print("\n")
     playing=True
 
-    if choice==4:
+    if choice==5:
         playing=False
     elif choice==1:
         guess_game()
@@ -42,5 +44,8 @@ while playing:
     elif choice==3:
         RPS_game()
         playagain(RPS_game)
+    elif choice==4:
+        RTD_game()
+        playagain(RTD_game)
     else:
         print("Invalid Choice, Try Again\n")
