@@ -1,7 +1,6 @@
 import random
 
 def autoroll():
-
     def rolling_dice(n):
         l=[]
         for i in range(n):
