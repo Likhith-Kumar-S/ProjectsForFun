@@ -48,5 +48,3 @@ def play():
 
     print("Your final score is: ", score)
     print("The highest you scored is: ", high_score)
-
-play()

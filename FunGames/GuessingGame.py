@@ -1,7 +1,7 @@
 import random
 
 def play():
-    print("Welcome to the Guessing Game")
+    print("Welcome to the Guessing Game\n")
     print("There is a Secret Number, Can You Guess It??")
     print("The Secret Number is in Between 1-100")
     print("(You Can Give Up by Entering a Number Greater Than 100 or Lesser than 1)\n")
